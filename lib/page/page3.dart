@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drawer/warna.dart';
+import 'package:flutter_drawer_coba/page/warna.dart';
 
-class Page1 extends StatelessWidget {
+class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -175,7 +175,7 @@ Widget _buildButton(BuildContext context) {
           fontSize: 12.0,
         ),
       ),
-      FlatButton(
+      TextButton(
         child: Text(
           'Login',
           style: TextStyle(color: Colors.white),
