@@ -1,6 +1,8 @@
 import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_drawer_coba/page/page1.dart';
+import 'package:flutter_drawer_coba/page/page2.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -57,31 +59,25 @@ Widget _buildDrawer(BuildContext context){
               ),
               ListTile(
                 leading: Icon(Icons.home),
-                title: Text("Beranda"),
+                title: Text("Halaman 1"),
                 onTap: (){
-                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
                 },
               ),
               ListTile(
                 leading: Icon(Icons.people),
-                title: Text("Pegawai"),
-                onTap: (){},
-              ),
-              ListTile(
-                leading: Icon(Icons.money),
-                title: Text("Transaksi"),
-                onTap: (){},
+                title: Text("Halaman 2"),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
+                },
               ),
               Divider(),
               ListTile(
                 leading: Icon(Icons.emoji_emotions),
-                title: Text("Profil"),
-                onTap: (){},
-              ),
-              ListTile(
-                leading: Icon(Icons.info),
-                title: Text("Tentang"),
-                onTap: (){},
+                title: Text("Keluar"),
+                onTap: (){
+                  Navigator.pop(context);
+                },
               ),
         ],
       ),
