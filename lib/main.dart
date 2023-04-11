@@ -69,7 +69,7 @@ Widget _buildDrawer(BuildContext context){
                 leading: Icon(Icons.people),
                 title: Text("Halaman 2"),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page2()));
                 },
               ),
               ListTile(
