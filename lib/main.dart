@@ -3,6 +3,7 @@ import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:flutter_drawer_coba/page/page1.dart';
 import 'package:flutter_drawer_coba/page/page2.dart';
+import 'package:flutter_drawer_coba/page/page3.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -68,7 +69,14 @@ Widget _buildDrawer(BuildContext context){
                 leading: Icon(Icons.people),
                 title: Text("Halaman 2"),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page2()));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.people),
+                title: Text("Halaman 3"),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Page3()));
                 },
               ),
               Divider(),
