@@ -8,5 +8,10 @@ class Page2 extends StatelessWidget {
       centerTitle: true,
       backgroundColor: Colors.blue,
     ),
+        body: Center(
+      child: Text("Ini adalah halaman utama dan dibuat oleh Rendi Buana Perdana 210103115",
+      style: TextStyle(fontSize: 20),
+      ),
+    )
   );
 }
